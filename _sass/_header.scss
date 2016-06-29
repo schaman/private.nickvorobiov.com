@@ -1,0 +1,39 @@
+.header {
+  left: 0;
+  padding: 4.286em 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  color: #fff;
+}
+
+.header__logo, .header__nav, .header__order {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header__nav {
+  margin-left: 4.286em;
+  padding: 1.143em 0 0;
+}
+
+.header__phone {
+  float: right;
+
+  font-size: 1.714em;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 50%;
+}
+
+.logo {
+  background: url(../images/logo.png) no-repeat;
+  display: inline-block;
+  height: 30px;
+  margin: 0.714em 0;
+  text-decoration: none;
+  text-indent: -9999px;
+  width: 46px;
+}

@@ -1,0 +1,29 @@
+.s-plan {
+  .s-plan__icon {
+    margin: 55px auto;
+    display: block;
+  }
+
+  .s-plan__item {
+    padding-bottom: 7.143em;
+  }
+
+  .s-plan__item-2 {
+    p {
+      text-align: right;
+    }
+  }
+
+  .s-plan__icon-1 {
+    width: (844px / 2);
+    height: (576px / 2);
+  }
+  .s-plan__icon-2 {
+    width: (550px / 2);
+    height: (712px / 2);
+  }
+  .s-plan__icon-3 {
+    width: (726px / 2);
+    height: (472px / 2);
+  }
+}

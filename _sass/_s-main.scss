@@ -1,0 +1,34 @@
+.s-main {
+  background-color: #000;
+  background-image: url(../images/b_main.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #fff;
+
+  .container {
+    padding-top: 150px;
+    padding-bottom: 43px;
+  }
+
+  .s-main__left {
+    
+  }
+
+  .s-main__right {
+    iframe {
+      outline: solid 3px rgba(255,255,255,0.4);
+    }
+  }
+}
+
+.s-main__title {
+  line-height: 1;
+  margin: 0 0 1.19em;
+}
+
+.s-main__introtext {
+  font-size: 1.714em;
+  font-weight: 300;
+  line-height: 1.2;
+}

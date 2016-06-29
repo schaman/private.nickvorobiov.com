@@ -1,46 +1,391 @@
-<!DOCTYPE html>
-<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru"> <!--<![endif]-->
-<head>
-	<meta charset="UTF-8">
-	<title>Landing</title>
-	<meta name="viewport" content="width=1280, initial-scale=1">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-</head>
-<body>
-	<div id="wrapper">
-		<header>
-			<div class="content">
-				<div class="header">
-					<div class="header__logo">
-						<img src="img/logo.png" alt="logo">
-					</div>
-					<div class="header__menu">
-						<nav>
-							<a href="#">Программа</a>
-							<a href="#">О тренере</a>
-							<a href="#">Особенности</a>
-							<a href="#">Результаты учеников</a>
-							<a href="#">Формат работы</a>
-							<a href="#">Стоимость</a>
-						</nav>
-					</div>
-					<div class="header__register">
-						<a href="#" class="btn">Зарегистрироваться</a>
-					</div>
-				</div>
-				<div class="banner">
-					<p class="banner__winner"><span>«</span>Победитель<span>»</span></p>
-					<p class="banner__online-training">онлайн-тренинг Николая Воробьёва</p>
-					<p class="banner__description">Научишься хотеть большего, поймешь куда идти,<br> добьёшься поставленных целей</p>
-				</div>
-				<div class="teacher">
-					<div class="teacher__caption">Николай Воробьёв</div>
+---
+layout: base
+---
+
+<div class="root-layout">
+	<header class="header">
+		<div class="container">
+			<div class="header__logo">
+				<div class="logo">
+					Николай Воробьёв
 				</div>
 			</div>
-		</header>
+			<div class="header__phone">
+				+7 921 761-85-06
+			</div>
+		</div>
+	</header>
+	<main class="main" role="main">
+		<section class="section s-main">
+			<div class="container">
+				<div class="row">
+					<div class="s-main__left col-xs-6">
+						<h1 class="s-main__title">
+							Личные тренировки с&nbsp;Николаем Воробьёвым
+						</h1>
+						<p class="s-main__introtext">
+							Научу знакомиться и&nbsp;строить близкие отношения с&nbsp;женщинами за&nbsp;8&nbsp;занятий
+						</p>
+						<button class="btn btn-primary" data-modal-target="modal">Записаться на&nbsp;встречу</button>
+					</div>
+					<div class="s-main__right col-xs-6">
+						<iframe width="557" height="313" src="http://www.youtube.com/embed/rmz9R7o_9IE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s-student">
+			<div class="container">
+				<div class="row">
+					<article class="col-xs-6 student">
+						<header class="row middle-xs student__head">
+							<div class="col-xs-4">
+								<img src="/images/student-1.jpg" alt="">
+							</div>
+							<div class="col-xs-8">
+								<h4 class="student__title">Виктор</h4>
+							</div>
+						</header>
+						<div class="student__text">
+							<p>Виктор&nbsp;&mdash; директор строительной компании, он&nbsp;уверенно разговаривает на&nbsp;рабочие темы, а&nbsp;при личном разговоре теряется. Каждый день Виктор смотрит на&nbsp;красивых женщин, но&nbsp;стесняется подойти, считает&nbsp;&mdash; это пикап, а&nbsp;для пикапа он&nbsp;слишком взрослый. Думает&nbsp;&mdash; здорово, когда женщина дает понять чего хочет и&nbsp;проявляет инициативу.</p>
+						</div>
+					</article>
+					<article class="col-xs-6 student">
+						<header class="row middle-xs student__head">
+							<div class="col-xs-4">
+								<img src="/images/student-2.jpg" alt="">
+							</div>
+							<div class="col-xs-8">
+								<h4 class="student__title">Дмитрий</h4>
+							</div>
+						</header>
+						<div class="student__text">
+							<p>Дима&nbsp;&mdash; начальник отдела в&nbsp;банке. Познакомиться для него&nbsp;&mdash; не&nbsp;сложно, а&nbsp;дальше всё останавливается. Он&nbsp;может без проблем пригласить в&nbsp;ресторан девушку с&nbsp;&laquo;Мамбы&raquo;, но&nbsp;не&nbsp;делает этого&nbsp;&mdash; скучно: разговоры поверхностные, оба как в&nbsp;маске. А&nbsp;всё потому, что Дима знакомится с&nbsp;кем безопасно, а&nbsp;о&nbsp;тех, кто реально нравится, старается не&nbsp;думать&nbsp;&mdash; боится облажаться.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="section s-strategy">
+			<div class="container">
+				<h5>
+					На&nbsp;тренировках мы&nbsp;разберёмся в&nbsp;ситуации, и&nbsp;я&nbsp;создам индивидуальную стратегию,
+					<br/>которая поможет получать удовольствие от&nbsp;общения с&nbsp;женщинами, завести гармоничные отношения
+					<br/>и&nbsp;не&nbsp;быть, как Дима и&nbsp;Виктор.</h5>
+			</div>
+		</section>
+		<section class="section s-barrier">
+			<div class="container">
+				<h2 class="title title--center">
+					Мы&nbsp;встретимся и&nbsp;выясним,
+					<br/>какой у&nbsp;тебя барьер 
+				</h2>
+				<div class="row">
+					<div class="col-xs-5">
+						<div class="__item">
+							<h4>Не&nbsp;умеешь знакомиться</h4>
+
+							<p>Можешь заставить себя подойти к&nbsp;девушке, но&nbsp;общение напряженное, вымучиваешь каждое слово.</p>
+							<p>Не&nbsp;можешь подойти к&nbsp;девушке, ноги трясутся.</p>
+
+							<h5>На&nbsp;тренировках ты&nbsp;поймешь</h5>
+							<p>Где найти и&nbsp;как начать разговор</p>
+							<p>Как построить интересный диалог</p>
+							<p>Как договориться о&nbsp;встрече, взять телефон</p>
+							<p>Как достойно принять отказ</p>
+
+							<h5>Результат</h5>
+							<p><strong>Навык, который поможет знакомиться с&nbsp;девушками без напряжения и&nbsp;неловкости.</strong></p>
+						</div>
+					</div>
+					<div class="col-xs-5 col-xs-offset-1">
+						<div class="__item">
+							<h4>Боишься близости с&nbsp;девушками, которые реально нравятся</h4>
+
+							<p>Общаешься, но&nbsp;дальше разговоров дело не&nbsp;заходит.</p>
+							<p>Есть отношения, но&nbsp;формальные, ищешь &laquo;свою&raquo;.</p>
+							<p>Боишься подойти к&nbsp;красивой девушке, которая реально нравится.</p>
+
+							<h5>На&nbsp;тренировках ты&nbsp;поймешь</h5>
+							<p>Как перевести просто разговоры в&nbsp;отношения</p>
+							<p>Как провести свидание, чтобы ей&nbsp;захотелось большего</p>
+							<p>О&nbsp;чем говорить на&nbsp;свидании</p>
+							<p>Как понять, подходит тебе женщина или нет</p>
+
+							<h5>Результат</h5>
+							<p><strong>Заведешь отношения с&nbsp;достойной девушкой, которая не&nbsp;ведется на&nbsp;пикаперские штучки и&nbsp;не&nbsp;&laquo;динамо&raquo;.</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section s-plan">
+			<div class="container">
+				<div class="row s-plan__item s-plan__item-1">
+					<div class="col-xs-6">
+						<img class="s-plan__icon s-plan__icon-1" src="/images/icon-1.png"/>
+					</div>
+					<div class="col-xs-6">
+						<h2 class="title">Разработаем стратегию</h2>
+						<p>
+							Первый разговор дает понимание куда двигаться. На&nbsp;его основе я&nbsp;создаю стратегию. Стратегия нешаблонная. Она подстроена под личные особенности и&nbsp;создается от&nbsp;барьеров.
+						</p>
+						<p>
+							Основа&nbsp;&mdash; не&nbsp;пикап, не&nbsp;тотальная переделка твоего&nbsp;Я, а&nbsp;грамотная упаковка, как в&nbsp;бизнесе&nbsp;&mdash; без дешевых понтов, но&nbsp;и&nbsp;без лишней скромности.
+						</p>
+					</div>
+				</div>
+				<div class="row s-plan__item s-plan__item-2">
+					<div class="col-xs-6">
+						<h2 class="title title--right">Ты&nbsp;получишь задания</h2>
+						<p>
+							Каждый урок ты&nbsp;получаешь инструкции и&nbsp;задание. Начинаем делать задание вместе: например, выходим на&nbsp;улицу, общаемся с&nbsp;девушками, у&nbsp;тех кто понравился&nbsp;&mdash; берешь номер. Я&nbsp;убеждаюсь, что у&nbsp;тебя получается, а&nbsp;дальше ты&nbsp;практикуешься в&nbsp;свободное время. 
+						</p>
+						<p>
+							Устраиваем двойные свидания или ты&nbsp;идешь на&nbsp;свидание, а&nbsp;я&nbsp;наблюдаю со&nbsp;стороны. Возникают вопросы&nbsp;&mdash; получаешь ответы. Цикл повторяется до&nbsp;выработки устойчивого навыка.
+						</p>
+					</div>
+					<div class="col-xs-6">
+						<img class="s-plan__icon s-plan__icon-2" src="/images/icon-2.png"/>
+					</div>
+				</div>
+				<div class="row s-plan__item s-plan__item-3">
+					<div class="col-xs-6">
+						<img class="s-plan__icon s-plan__icon-3" src="/images/icon-3.png"/>
+					</div>
+					<div class="col-xs-6">
+						<h2 class="title">Я&nbsp;дам обратную связь:<br><small>что замечательно, что плохо, куда двигаться дальше</small></h2>
+						<p>
+							После задания я&nbsp;разбираю ошибки и&nbsp;вскрываю проблемы: не&nbsp;нашли общий язык, нет взаимного интереса или просто ты&nbsp;накосячил.
+						</p>
+						<p>
+							Промежуточный разбор помогает скорректировать стратегию и&nbsp;подстроить под тебя еще больше.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section s-format">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-7 s-format__left">
+						<h2 class="title">Минимальный курс&nbsp;&mdash; 8&nbsp;тренировок в&nbsp;Петербурге</h2>
+						<div class="s-format__option">
+							<h5>8&nbsp;тренировок за&nbsp;4&nbsp;недели</h5>
+							<p>Тренировка длится час, договариваемся о&nbsp;расписании лично</p>
+						</div>
+						<div class="s-format__option">
+							<h5>Занятия по&nbsp;выходным</h5>
+							<p>Это вариант создан для москвичей. Многие ученики из&nbsp;Москвы приезжают в&nbsp;субботу и&nbsp;воскресение, чтобы не&nbsp;отрываться от&nbsp;работы</p>
+						</div>
+						<div class="s-format__option">
+							<h5>Или интенсив</h5>
+							<p>8&nbsp;занятий за&nbsp;8&nbsp;дней. Подходит, если ты&nbsp;не&nbsp;из&nbsp;Питера</p>
+						</div>
+					</div>
+					<div class="col-xs-5 s-format__right">
+						<h4>1&nbsp;тренировка <br/> =&nbsp;250&nbsp;евро</h4>
+						<button class="btn btn-primary" data-modal-target="modal">Записаться на&nbsp;встречу</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section s-result">
+			<div class="container">
+				<h2 class="title">Тренировки&nbsp;&mdash; это не&nbsp;пикап и&nbsp;клоунада, а&nbsp;устранение дискомфорта и&nbsp;прокачка уверенности</h2>
+				<div class="row">
+					<div class="col-xs-8">
+						<p>Наша цель&nbsp;&mdash; сделать тебя и&nbsp;женщину счастливыми. Мы&nbsp;не&nbsp;будем давить, приставать, использовать НЛП, чтобы соблазнить. Задания адекватные, не&nbsp;нужно вести себя, как клоун, если увидит коллега или партнёр, ничего плохого не&nbsp;подумает.</p>
+					</div>
+				</div>
+				<div class="row s-result__box">
+					<div class="col-xs-6 s-result__box-content">
+						<h4>В&nbsp;результате научишься знакомиться и&nbsp;создашь отношения с&nbsp;близкой по&nbsp;духу женщиной</h4>
+						<p>За&nbsp;8&nbsp;занятий научишься знакомиться и&nbsp;брать телефон. Начнешь чувствовать себя, как босс и&nbsp;отсеивать девушек, которые тебе не&nbsp;подходят. Поймешь о&nbsp;чём говорить, чтобы было интересно обоим. Итог работы&nbsp;&mdash; гармоничные отношения.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section s-anchor">
+			<div class="container">
+				<h3 class="title">Записывайся на первую бесплатную встречу</h3>
+				<ul>
+					<li>На&nbsp;встрече мы&nbsp;разберем твои проблемы, поставим цель, разработаем стратегию</li>
+				</ul>
+				<div class="row">
+					<div class="col-xs-9">
+						<div class="form">
+							<form method="post" action="http://love.prorealnost.com/order.php">
+								<ul class="form__wrap row">
+							    	<li class="form__item col-xs-4">
+							    		<input type="text" class="input" name="name" placeholder="Имя">
+							    	</li>
+							    	<li class="form__item col-xs-4">
+							    		<input type="text" class="input" name="phone" placeholder="Телефон">
+							    	</li>
+								    <li class="form__item col-xs-4">
+								    	<button class="btn btn-primary">
+									    	Записаться
+									    </button>
+								    </li>
+								</ul>
+					      <input type="hidden" name="trello-list-id" value="569f823006dc53595355c866" />
+					      <input type="hidden" name="redirect" value="http://private.nickvorobiov.com/ok/" />
+					      <input type="hidden" name="sms" value="Запись на коучинг" />
+					      <input type="hidden" name="form" value="anchor" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s-rules">
+			<div class="container">
+				<h2 class="title title--center">Три простых условия, чтобы сработало</h2>
+				<div class="rule row">
+					<div class="rule__item col-xs-4">
+						<p class="introtext">Не&nbsp;пропускать тренировки <br/> и&nbsp;приходить вовремя</p>
+					</div>
+					<div class="rule__item col-xs-4">
+						<p class="introtext">Выполнять задания</p>
+					</div>
+					<div class="rule__item col-xs-4">
+						<p class="introtext">Следовать рекомендациям</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section s-faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3">
+						<h2 class="js-sticker">Ответы<br>на вопросы</h2>
+					</div>
+					<div class="col-xs-6 col-xs-offset-2">
+						<div class="faq">
+							<article class="faq__item">
+								<h5 class="title">Получится&nbsp;ли у&nbsp;меня?</h5>
+								<p>У&nbsp;тебя точно получится, если будешь следовать трем условиям: не&nbsp;пропускать тренировки, выполнять задания, следовать рекомендациям. Еще не&nbsp;было людей, которые работали, и&nbsp;не&nbsp;получилось.</p>
+							</article>
+							<article class="faq__item">
+								<h5 class="title">Сколько времени нужно тратить на&nbsp;задания?</h5>
+								<p>У&nbsp;нас 8&nbsp;тренировок и&nbsp;7&nbsp;домашних заданий по&nbsp;часу. Итого&nbsp;&mdash; 15&nbsp;часов в&nbsp;месяц.</p>
+							</article>
+							<article class="faq__item">
+								<h5 class="title">Будут&nbsp;ли странные задания?</h5>
+								<p>Нет. Задания&nbsp;&mdash; обычные жизненные ситуации: подойти, сказать &laquo;здравствуйте&raquo;, завести разговор, взять телефон...</p>
+							</article>
+							<article class="faq__item">
+								<h5 class="title">Будут&nbsp;ли сложные задания?</h5>
+								<p>Задания дробятся на&nbsp;части. Не&nbsp;будет такого: &laquo;иди, возьми 20&nbsp;номеров, а&nbsp;потом узнаешь, где ошибся&raquo;. Я&nbsp;даю четкую инструкцию к&nbsp;небольшой задаче: например, подойти к&nbsp;девушке и&nbsp;заговорить, иногда подходим вместе, поэтому не&nbsp;будет дискомфорта, не&nbsp;придется бороться с&nbsp;собой и&nbsp;краснеть. </p>
+							</article>
+							<article class="faq__item">
+								<h5 class="title">Первая встреча платная?</h5>
+								<p>Первая встреча&nbsp;&mdash; это подготовка к&nbsp;нашей работе. Выяснение, с&nbsp;какими проблемами ты&nbsp;пришел, и&nbsp;по&nbsp;какой стратегии будем работать. Это как составить план лечения.</p>
+								<p>Встреча бесплатная, но&nbsp;оставляй заявку, если уверен, что готов бороться с&nbsp;проблемой.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="section s-about">
+			<div class="s-about__sticker js-sticker-about"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<h2>Николай Воробьёв</h2>
+						<p class="introtext"><b>тренирует 13 лет, ведет программы на радио<br> и телевидении, пишет книги</b></p>
+
+						<h4 class="title">Тренерский опыт</h4>
+						<p>Начал тренировать в 2003 году. Провёл тренинги в 24 городах России, Европы и Азии.</p>
+						<p>С 2006 по 2010 ведущий тренер крупнейшей в мире компании, которая специализируется на знакомствах. С 2010 тренер по достижению прорывных результатов, развитию личных качеств и созданию отношений.</p>
+						<p>Автор 5 книг, 15 тренингов, обучил 15 000 человек.</p>
+
+						<h4 class="title">На телевидении</h4>
+						<ul>
+							<li>2006 — шоу «Правила съёма» на ТНТ — эксперт по соблазнению</li>
+							<li>2010 — реалити-шоу «Pro Любoff» на 1+1 — тренер для женщин</li>
+							<li>2012 — реалити-шоу «ПроРеальность» — автор и ведущий</li>
+							<li>2015 — шоу «Парк» на «Первом» — передача про настоящих мужчин</li>
+						</ul>
+
+						<h4 class="title">На радио</h4>
+						<ul>
+							<li>Радио «Метро» — специальный выпуск про отношения</li>
+							<li>2011-2013 — «Школа Соблазна» на «Подстер» — соавтор и ведущий</li>
+						</ul>
+
+						<h4 class="title">Книги</h4>
+						<ul>
+							<li>«Легкий способ бросить дрочить»</li>
+							<li>«Реальная любовь»</li>
+							<li>«Быстрое поднятие самооценки»</li>
+							<li>«Как встать с дивана и начать добиваться желаемого»</li>
+							<li>«Как стать богатым и успешным, оставаясь тупым и ленивым»</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__social">
+			<div class="social">
+    		<div class="social-list">
+    			<div class="social-list__item">
+    				<a href="http://vk.com/nickvorobiov" class="social-link social-link--vk" target="blank" title="">VK</a>
+    			</div>
+    			<div class="social-list__item">
+    				<a href="https://www.facebook.com/nickvorobiov" class="social-link social-link--fb" target="blank" title="">FB</a>
+    			</div>
+    			<div class="social-list__item">
+    				<a href="http://instagram.com/nickvorobiov" class="social-link social-link--in" target="blank" title="">IN</a>
+    			</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copy">
+		  PROREALNOST II &copy; 2016
+		</div>
+		<div class="footer__dev">
+			<a href="http://soedinennost.com/privacy" target="blank">Политика конфиденциальности</a>
+		</div>
 	</div>
-</body>
-</html>
+</footer>
+
+<!--noindex-->
+<div class="modal modal--full" data-modal-id="modal">
+	<div class="modal-close" data-modal-action="close">Закрыть</div>
+   	<div class="form">
+   		<h3 class="title">Записывайся на первую бесплатную встречу</h3>
+   		
+		<form method="post" action="http://love.prorealnost.com/order.php">
+			<ul class="form__wrap row">
+				<li class="form__item col-xs-4">
+		    		<input type="text" name="name" class="input input--outline" placeholder="Имя">
+		    	</li>
+		    	<li class="form__item col-xs-4">
+		    		<input type="text" name="phone" class="input input--outline" placeholder="Телефон">
+		    	</li>
+			    <li class="form__item col-xs-4">
+			    	<button class="btn btn-primary">
+				    	Записаться
+				    </button>
+			    </li>
+			</ul>
+      <input type="hidden" name="trello-list-id" value="569f823006dc53595355c866" />
+      <input type="hidden" name="redirect" value="http://private.nickvorobiov.com/ok/" />
+      <input type="hidden" name="sms" value="Запись на коучинг" />
+      <input type="hidden" name="form" value="modal" />
+		</form>
+	</div>
+</div>
+
+<!--/noindex-->

@@ -1,0 +1,33 @@
+.student {
+  cursor: default;
+  margin-bottom: 2.857em;
+  padding-right: 2.857em;
+  padding-top: 3.571em;
+  position: relative;
+}
+
+.student__head {
+  margin-bottom: 1.786em;
+}
+
+.student__title {
+  font-weight: 400;
+  padding-bottom: 0.625em;
+  position: relative;
+}
+
+.student__title::after {
+  background-color: #f1d725;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 70px;
+}
+
+.s-student {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

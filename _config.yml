@@ -6,7 +6,7 @@ exclude:
   - package.json
   - README.md
   - gulpfile.js
-metrika: 38223835
+yandex_metrika: 38223835
 google_analytics: UA-46456269-13
 permalink: /:title/
 

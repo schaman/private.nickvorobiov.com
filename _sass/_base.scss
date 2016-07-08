@@ -99,6 +99,14 @@
     }
   }
 
+  &--right {
+    text-align: right;
+    &::after {
+      right: 0;
+      left: auto;
+    }
+  }
+
   em {
     font-size: 1.800em;
     font-style: normal;

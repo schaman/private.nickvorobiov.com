@@ -1,33 +1,61 @@
-.student {
-  cursor: default;
-  margin-bottom: 2.857em;
-  padding-right: 2.857em;
-  padding-top: 3.571em;
-  position: relative;
-}
-
-.student__head {
-  margin-bottom: 1.786em;
-}
-
-.student__title {
-  font-weight: 400;
-  padding-bottom: 0.625em;
-  position: relative;
-}
-
-.student__title::after {
-  background-color: #f1d725;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 2px;
-  left: 0;
-  position: absolute;
-  width: 70px;
-}
-
 .s-student {
-  padding-bottom: 0;
-  margin-bottom: 0;
+  overflow: hidden;
+  padding-bottom: 0 !important;
+
+  .student {
+    padding-top: 3.571em;
+    padding-right: 2.857em;
+    margin-bottom: 2.857em;
+    position: relative;
+    cursor: default;
+    &__head {
+      margin-bottom: 1.786em;
+    }
+    &__title {
+      font-weight: 400;
+      padding-bottom: 0.625em;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        background-color: $color-primary;
+        width: 70px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+    &__text {
+      visibility: hidden;
+      opacity: 0;
+      @include transform(translate(0, 0.714em));
+      transition: all 0.4s ease-in-out;
+    }
+    &::after {
+      content: '';
+      background: $color-back;
+      position: absolute;
+      top: 0;
+      right: 1.071rem;
+      bottom: 0;
+      left: 15%;
+      z-index: -1;
+
+      visibility: hidden;
+      opacity: 0;
+      @include transform(translate(2.143em, 0));
+      transition: all .4s ease-in-out;
+
+    }
+    &.is-active,
+    &:hover {
+      & .student__text,
+      &::after {
+        visibility: visible;
+        opacity: 1;
+        @include transform(translate(0));
+      }
+    }
+  }
 }

@@ -26,12 +26,6 @@
         bottom: 0;
       }
     }
-    &__text {
-      visibility: hidden;
-      opacity: 0;
-      @include transform(translate(0, 0.714em));
-      transition: all 0.4s ease-in-out;
-    }
     &::after {
       content: '';
       background: $color-back;
@@ -46,16 +40,6 @@
       opacity: 0;
       @include transform(translate(2.143em, 0));
       transition: all .4s ease-in-out;
-
-    }
-    &.is-active,
-    &:hover {
-      & .student__text,
-      &::after {
-        visibility: visible;
-        opacity: 1;
-        @include transform(translate(0));
-      }
     }
   }
 }
